@@ -236,25 +236,29 @@
       type: String,
       required: true,
     },
-    startDate: {
-      column: "Start date",
-      type: Date,
-      required: true,
-    },
-    endDate: {
-      column: "End date",
-      type: Date,
-      required: true,
-      validate: (value, row, sheet) => {
-        const startDate = row.startDate;
-        if (!startDate) {
-          return "Start date is required";
-        }
-        if (value < startDate) {
-          throw Error("End date must be after start date");
-        }
-      },
-    },
+    dates: {
+      schema: {
+        startDate: {
+          column: "Start date",
+          type: Date,
+          required: true,
+        },
+        endDate: {
+          column: "End date",
+          type: Date,
+          required: true,
+          validate: (value, row, sheet) => {
+            const startDate = row.startDate;
+            if (!startDate) {
+              return "Start date is required";
+            }
+            if (value < startDate) {
+              throw Error("End date must be after start date");
+            }
+          },
+        },
+      }
+    }
   };
 
   var input = document.getElementById('input')
