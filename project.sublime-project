@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"folder_exclude_patterns": ["jsonize-excel/node_modules", "jsonize-excel/coverage", "jsonize-excel/modules", "jsonize-excel/lib", "jsonize-excel/commonjs", "project.sublime-workspace"],
+			"file_exclude_patterns": ["jsonize-excel/bundle/jsonize-excel.min.js", "jsonize-excel/bundle/jsonize-excel.min.js.map"]
+		}
+	],
+	"settings":
+	{
+		"tab_size": 2,
+		"translate_tabs_to_spaces": false,
+		"trim_trailing_white_space_on_save": true
+	}
+}

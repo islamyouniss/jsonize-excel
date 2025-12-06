@@ -1,0 +1,37 @@
+# git
+.gitignore
+.gitattributes
+
+# Babel
+.babelrc
+
+# Travis CI
+.travis.yml
+
+# test coverage folder
+/coverage/
+
+# npm errors
+npm-debug.log
+
+# for OS X users
+.DS_Store
+
+# webpack config
+/webpack.config.babel.js
+
+/test/
+/source/
+*.test.js
+
+# demo
+/bundle/index.html
+/bundle/lib/
+/website/
+
+# utility scripts used during the "build" phase
+/build-scripts/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
